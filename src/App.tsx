@@ -6,7 +6,7 @@ function App() {
     return (
         <BanditContextProvider
             apiKey={import.meta.env.VITE_BANDIT_API_KEY}
-            cluster={import.meta.env.VITE_CLUSTER as ClusterBanditType}
+            cluster='mainnet'
         >
             <div className="container mx-auto p-4">
                 <h1 className="text-2xl font-bold mb-4">Bandit Network Leaderboard</h1>
