@@ -6,7 +6,7 @@ function App() {
     return (
         <BanditContextProvider
             apiKey={import.meta.env.VITE_BANDIT_API_KEY}
-            cluster='mainnet'
+            cluster='mainnet' // devnet for testing
         >
             <div className="container mx-auto p-4">
                 <h1 className="text-2xl font-bold mb-4">Bandit Network Leaderboard</h1>

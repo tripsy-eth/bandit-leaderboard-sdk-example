@@ -38,7 +38,6 @@ pnpm install
 ```env
 VITE_BANDIT_API_KEY=your_api_key_here
 VITE_CAMPAIGN_ID=your_campaign_id
-VITE_CLUSTER=mainnet # or devnet for testing
 ```
 
 4. Start the development server:
@@ -52,13 +51,12 @@ pnpm dev
 
 ## Environment Configuration
 
-- **Development (Devnet)**
-  - Use `VITE_CLUSTER=devnet` for testing
-  - Ideal for development and testing phases
+The application can be configured to run on either:
 
-- **Production (Mainnet)**
-  - Use `VITE_CLUSTER=mainnet` for production
-  - Use when deploying to live environment
+- **Devnet**: A test network for development and testing
+- **Mainnet**: The main network for production use
+
+Configure this in `App.tsx` by setting the `cluster` prop to either `'devnet'` or `'mainnet'`.
 
 ## Project Structure
 
